@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS стили для карточек */
+        .wrapper {
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+        }
+
+        .content {
+            /* max-width: 1000px; /* Максимальная ширина контента */ */
+            width: 100%;
+            padding: 20px;
+            /* box-sizing: border-box; */
+            text-align: center; /* Центрирование текста внутри контейнера */
+        }
+
+        .card {
+            background-color: #333;
+            color: white;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease; /* Анимация для плавного изменения трансформации */
+        }
+
+        .card:hover {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Медиа-запрос для адаптивного дизайна */
+        @media only screen and (max-width: 600px) {
+            .card {
+                width: calc(100% - 20px); /* Ширина контейнера, минус отступы */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>Мои контакты</h1>
+            <p>Тут можно узнать как связаться со мной.</p>
+            <div class="card">
+                <img src="images/me.jpg" alt="Проект 1">
+                <p>Номер телефона: 8-989-558-36-32</p>
+                <p>Почта: mesrop.vard@mail.ru</p>
+                <p>GitHub: github.com/VardkesMesropyan</p>
+                <p>ВКонтакте: Bla Spa</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Мое портфолио</p>
+    </footer>
+</body>
+</html>
